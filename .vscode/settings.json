@@ -1,0 +1,6 @@
+{
+    "python.analysis.extraPaths": [
+        "/mnt/c/Users/itsuk/Documents/deep_learning_from_scratch/env/lib/python3.8/site-packages/",
+        "./utils"
+    ]
+}
