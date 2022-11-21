@@ -1,13 +1,16 @@
 from utils import readFile
+from collections import deque
 
 
 lines = readFile("./sampleInput.txt")
-N = int(input())
+N, M, T = map(int, input().split())
 malfunctionDst = {}
+reactionTime = {}
 outputList = []
 for line in lines:
     ip = line["ip"]
     isOk = True if line["reactTime"] != "-" else False
+
     if isOk:
         if ip in malfunctionDst:
             if malfunctionDst[ip]["count"] >= N:
